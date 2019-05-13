@@ -11,6 +11,11 @@ body  {
 	background: linear-gradient(to right, #FFEFBA, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.navbar {
+	background: linear-gradient(120DEG, #013369 0%, #D50A0A 100%);
+	color: white;
+	height:10vh;
+}
 .title {
 	background: linear-gradient(120DEG, #013369 0%, #D50A0A 100%);
 	-webkit-background-clip: text;
