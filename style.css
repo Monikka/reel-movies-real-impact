@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Reenie Beanie', cursive;
 }
 
-p.border-box {
+.border-box {
 	display: inline-block;
 	width: 100%;
 	margin: 5% auto;
@@ -77,6 +77,11 @@ p.border-box {
 	line-height: 1.5em;
 	background: linear-gradient(120DEG, #D50A0A 0%, #013369 100%);
 	color: white;
+}
+
+.card {
+	background: transparent;
+	border: none;
 }
 
 #one {
