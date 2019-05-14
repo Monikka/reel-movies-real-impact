@@ -1,4 +1,4 @@
-<!doctype html>
++<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -60,7 +60,7 @@
 		<div class="bgimg row justify-content-center">
 			<div class="col">
 				<h1 class="title">Reel Movies, Real Impact</h1>
-				<h1>Hollywood - Genres, Budgets, Profits, and everythings else.</h1>
+				<h1>Hollywood - Genres, Budgets, Profits, and everything else.</h1>
 				<br>
 				<h1>by Monikka Ravichandran</h1>
 			</div>
@@ -111,25 +111,24 @@
 			</div>
 			<div class="row mt-3 text-left">
 				<p class="col-12">Running down the numbers, we take a closer
-					look at Hollywood's evolution over the years.</p>
-				<h4 class="bold text-center">Since the rise of the
+					look at Hollywood's evolution over the years. Since the rise of the
 					“blockbuster" Hollywood has trended towards producing a small
 					number of movies that are extremely costly rather than many movies
-					with smaller budgets.</h4>
+					with smaller budgets.</p>
 				<div class="col-12 my-4" id="moviescountbyyear"></div>
 				<p>Hollywood saw an increase in the number of movies being
 					released in the 90s but that trend has been steadily dropping in
 					the recent years. Now, we see that though fewer movies are being
 					made, the budget for these movies is HUGE. The average budget for a
 					movie these days is around 100 million.</p>
-				<p>Below, I have listed the most expensive movies ever made
+				<p>Below, I have listed the most expensive movies made until 2018
 					(budget > 200M). Looking at the numbers it is clear that most
 					movies did well at the box office and earned several times their
 					budget as profit for the production houses.</p>
 				<figure class="col-12 my-4 figure">
-					<div id="example"></div>
+					<div id="moviesbudget"></div>
 					<figcaption class="figure-caption text-right">
-						Source: <a
+						Data Source: <a
 							href="https://www.statcrunch.com/app/index.php?dataid=2188684">StatCrunch.com</a>
 					</figcaption>
 				</figure>
@@ -160,9 +159,16 @@
 					success formula "Spend more, Earn more"? Do only high budget movies
 					turn out to make the most profits? Are there films of other genres
 					that were profitable despite their low budgets?</p>
-				<div class="col-12">I hoped not and then there was "Horror"!</div>
+				<div class="col-12">I hoped not and then there was <b>"Horror"!</b></div>
 			</div>
 
+			<div class="row mt-3 text-left">
+				<p class="col-12">Horror and psycho-thriller movies can be made without the
+					need for too much CGI and therefore, costs less in production. But
+					they compete on the same scale of the high budget movies. Below are a few movies from
+					recent times that were made with shoestring budgets (< 40M) but went on to be blockbusters, 
+					garnered critical acclaim and earned huge profits at the box office.</p>
+			</div>
 			<div class="row m-5">
 				<div class="card col-sm-3 pt-2" style="width: 18rem;">
 					<img class="card-img-top"
@@ -199,7 +205,6 @@
 						<p class="bold small">Series - Worldwide Gross Profit: 870M</p>
 					</div>
 				</div>
-
 			</div>
 
 			<div class="border-box">
@@ -319,47 +324,181 @@
 				}
 			},
 			legend : {
-				show : true
+				show : false
 			}
 		});
 		
 		var chart = c3.generate({
-			bindto : '#example',
+			bindto : '#moviesbudget',
 			size: {
-				  height: 350
+				  height: 400
 				},
 				zoom: {
 					  enabled: true
 					},
-		    data: {
-		    	x: 'Movie',
-		        columns: [
-		        	 ['Movie', "Avatar","Pirates of the Caribbean: On Stranger Tides","Avengers: Age of Ultron","Star Wars Ep. VII: The Force Awakens","Pirates of the Caribbean: At World’s End","Justice League","Spectre","The Dark Knight Rises","The Lone Ranger","John Carter","Tangled","Spider-Man 3","Captain America: Civil War","Batman v Superman: Dawn of Justice","The Hobbit: An Unexpected Journey","Harry Potter and the Half-Blood Prince","The Hobbit: The Desolation of Smaug","The Hobbit: The Battle of the Five Armies","The Fate of the Furious","Superman Returns","Pirates of the Caribbean: Dead Men Tell No Tales","Quantum of Solace","The Avengers","Pirates of the Caribbean: Dead Man’s Chest","Man of Steel","The Chronicles of Narnia: Prince Caspian","The Amazing Spider-Man","Transformers: The Last Knight","Jurassic World","Men in Black 3","Transformers: Revenge of the Fallen","Transformers: Age of Extinction","X-Men: The Last Stand","Robin Hood","Battleship","King Kong","The Golden Compass","Titanic","Star Wars Ep. VIII: The Last Jedi","Rogue One: A Star Wars Story","Black Panther","Finding Dory","Toy Story 3","Iron Man 3","Guardians of the Galaxy Vol 2","Spider-Man 2","Alice in Wonderland","Skyfall","Monsters University","Oz the Great and Powerful","X-Men: Days of Future Past","The Amazing Spider-Man 2","Cars 2","Tron: Legacy","2012","Terminator Salvation","Green Lantern","Prince of Persia: Sands of Time"],
-		        	 ['Budget($M)', 425,410.6,330.6,306,300,300,300,275,275,275,260,258,250,250,250,250,250,250,250,232,230,230,225,225,225,225,220,217,215,215,210,210,210,210,209,207,205,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200],
-		        	 ['Domestic Gross($M)', 760.507625,241.063875,459.005868,936.662225,309.420425,228.977297,200.074175,448.139099,89.302115,73.058679,200.821936,336.530303,408.084349,330.360194,303.003568,301.959197,258.366855,255.119788,225.764765,200.12,172.558876,169.368427,623.279547,423.315812,291.045518,141.62149,262.030663,130.168683,652.270625,179.020854,402.11187,245.439076,234.362462,105.487148,65.2334,218.080025,70.107728,659.363944,619.277731,532.177324,530.851601,486.295561,415.00488,408.992272,389.813101,373.524485,334.19111,304.360277,268.488329,234.770996,233.921534,202.853933,191.450875,172.062763,166.112167,125.322469,116.601172,90.759676],
-		        	 ['Worldwide Gross($M)', 2783.918982,1045.663875,1408.218722,2058.662225,963.420425,655.906448,879.620923,1084.439099,260.002115,282.7781,586.47724,894.86023,1153.304495,868.160194,1017.003568,935.083686,960.366855,955.119788,1237.466026,374.085065,794.758876,591.692078,1519.479547,1066.215812,667.999518,417.341288,757.890267,603.968683,1671.713208,654.213485,836.519699,1104.039076,459.260946,322.459006,305.218228,550.517357,367.262558,2208.208395,1331.243897,1050.988488,944.951601,1022.617376,1069.666004,1215.392272,863.197744,795.11067,1025.49111,1110.526981,743.588329,490.359051,747.862775,708.996336,560.155383,400.062763,788.408539,365.491792,219.535492,314.594597]
-		        ],
-		        type: 'bar'
-		    },
-		    axis: {
-		        x: {
-		            type: 'category',
-		            tick: {
-		                rotate: 75,
-		                multiline: false
-		            },
-		            height: 150
-		        }
-		    },
-		    bar: {
-		        width: {
-		            ratio: 0.4 // this makes bar width 50% of length between ticks
-		        }
-		        // or
-		        //width: 100 // this makes bar width 100px
-		    }
-		});
-		
-	</script>
+		    
+				data : {
+								x : 'Movie',
+								columns : [
+										[
+												'Movie',
+												"Avatar",
+												"Pirates of the Caribbean: On Stranger Tides",
+												"Avengers: Age of Ultron",
+												"Star Wars Ep. VII: The Force Awakens",
+												"Pirates of the Caribbean: At World’s End",
+												"Justice League",
+												"Spectre",
+												"The Dark Knight Rises",
+												"The Lone Ranger",
+												"John Carter",
+												"Tangled",
+												"Spider-Man 3",
+												"Captain America: Civil War",
+												"Batman v Superman: Dawn of Justice",
+												"The Hobbit: An Unexpected Journey",
+												"Harry Potter and the Half-Blood Prince",
+												"The Hobbit: The Desolation of Smaug",
+												"The Hobbit: The Battle of the Five Armies",
+												"The Fate of the Furious",
+												"Superman Returns",
+												"Pirates of the Caribbean: Dead Men Tell No Tales",
+												"Quantum of Solace",
+												"The Avengers",
+												"Pirates of the Caribbean: Dead Man’s Chest",
+												"Man of Steel",
+												"The Chronicles of Narnia: Prince Caspian",
+												"The Amazing Spider-Man",
+												"Transformers: The Last Knight",
+												"Jurassic World",
+												"Men in Black 3",
+												"Transformers: Revenge of the Fallen",
+												"Transformers: Age of Extinction",
+												"X-Men: The Last Stand",
+												"Robin Hood",
+												"Battleship",
+												"King Kong",
+												"The Golden Compass",
+												"Titanic",
+												"Star Wars Ep. VIII: The Last Jedi",
+												"Rogue One: A Star Wars Story",
+												"Black Panther",
+												"Finding Dory",
+												"Toy Story 3",
+												"Iron Man 3",
+												"Guardians of the Galaxy Vol 2",
+												"Spider-Man 2",
+												"Alice in Wonderland",
+												"Skyfall",
+												"Monsters University",
+												"Oz the Great and Powerful",
+												"X-Men: Days of Future Past",
+												"The Amazing Spider-Man 2",
+												"Cars 2", "Tron: Legacy",
+												"2012", "Terminator Salvation",
+												"Green Lantern",
+												"Prince of Persia: Sands of Time" ],
+										[ 'Budget($M)', 425, 410.6, 330.6, 306,
+												300, 300, 300, 275, 275, 275,
+												260, 258, 250, 250, 250, 250,
+												250, 250, 250, 232, 230, 230,
+												225, 225, 225, 225, 220, 217,
+												215, 215, 210, 210, 210, 210,
+												209, 207, 205, 200, 200, 200,
+												200, 200, 200, 200, 200, 200,
+												200, 200, 200, 200, 200, 200,
+												200, 200, 200, 200, 200, 200 ],
+										[ 'Domestic Gross($M)', 760.507625,
+												241.063875, 459.005868,
+												936.662225, 309.420425,
+												228.977297, 200.074175,
+												448.139099, 89.302115,
+												73.058679, 200.821936,
+												336.530303, 408.084349,
+												330.360194, 303.003568,
+												301.959197, 258.366855,
+												255.119788, 225.764765, 200.12,
+												172.558876, 169.368427,
+												623.279547, 423.315812,
+												291.045518, 141.62149,
+												262.030663, 130.168683,
+												652.270625, 179.020854,
+												402.11187, 245.439076,
+												234.362462, 105.487148,
+												65.2334, 218.080025, 70.107728,
+												659.363944, 619.277731,
+												532.177324, 530.851601,
+												486.295561, 415.00488,
+												408.992272, 389.813101,
+												373.524485, 334.19111,
+												304.360277, 268.488329,
+												234.770996, 233.921534,
+												202.853933, 191.450875,
+												172.062763, 166.112167,
+												125.322469, 116.601172,
+												90.759676 ],
+										[ 'Worldwide Gross($M)', 2783.918982,
+												1045.663875, 1408.218722,
+												2058.662225, 963.420425,
+												655.906448, 879.620923,
+												1084.439099, 260.002115,
+												282.7781, 586.47724, 894.86023,
+												1153.304495, 868.160194,
+												1017.003568, 935.083686,
+												960.366855, 955.119788,
+												1237.466026, 374.085065,
+												794.758876, 591.692078,
+												1519.479547, 1066.215812,
+												667.999518, 417.341288,
+												757.890267, 603.968683,
+												1671.713208, 654.213485,
+												836.519699, 1104.039076,
+												459.260946, 322.459006,
+												305.218228, 550.517357,
+												367.262558, 2208.208395,
+												1331.243897, 1050.988488,
+												944.951601, 1022.617376,
+												1069.666004, 1215.392272,
+												863.197744, 795.11067,
+												1025.49111, 1110.526981,
+												743.588329, 490.359051,
+												747.862775, 708.996336,
+												560.155383, 400.062763,
+												788.408539, 365.491792,
+												219.535492, 314.594597 ] ],
+								type : 'bar'
+							},
+							axis : {
+								x : {
+									type : 'category',
+									tick : {
+										rotate : 75,
+										multiline : false
+									},
+									height : 150
+								}
+							},
+							bar : {
+								width : {
+									ratio : 0.4
+								// this makes bar width 50% of length between ticks
+								}
+							// or
+							//width: 100 // this makes bar width 100px
+							},
+							legend: {
+					            position: 'inset',
+					           inset: {
+					                anchor: 'top-right',
+					                x: 50,
+					                y: -30,
+					                step: 1
+					            }
+					        },
+					       padding: {
+					            top: 30
+					        }
+						});
+			</script>
 </body>
 </html>

@@ -12,7 +12,7 @@ body  {
 }
 
 .navbar {
-	background: linear-gradient(120DEG, #013369 0%, #D50A0A 100%);
+	background: linear-gradient(120DEG, #2D1525 0%, #D50A0A 50%, #2D1525 100%);
 	color: white;
 	height:10vh;
 }
@@ -23,6 +23,11 @@ body  {
 	font-family: 'Rock Salt', cursive;
 	font-size: 4rem;
 	padding-top: 5%;
+}
+
+#moviesbudget {
+width: 100%;
+height: 600px;	
 }
 
 .box {
